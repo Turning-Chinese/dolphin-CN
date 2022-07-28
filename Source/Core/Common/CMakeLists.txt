@@ -44,6 +44,8 @@ add_library(common
   EnumFormatter.h
   EnumMap.h
   Event.h
+  FatFsUtil.cpp
+  FatFsUtil.h
   FileSearch.cpp
   FileSearch.h
   FileUtil.cpp
@@ -62,8 +64,6 @@ add_library(common
   HttpRequest.h
   Image.cpp
   Image.h
-  ImageC.c
-  ImageC.h
   IniFile.cpp
   IniFile.h
   Inline.h
@@ -144,8 +144,9 @@ PUBLIC
 
 PRIVATE
   ${CURL_LIBRARIES}
+  FatFs
   ${ICONV_LIBRARIES}
-  png
+  spng
   ${VTUNE_LIBRARIES}
 )
 
@@ -312,9 +313,4 @@ endif()
 if(MSVC)
   # Add precompiled header
   target_link_libraries(common PRIVATE use_pch)
-
-  # We need to disable PCH for this one file, because it's C and our PCH is C++
-  set_source_files_properties(
-    ${CMAKE_CURRENT_SOURCE_DIR}/ImageC.c
-    PROPERTIES COMPILE_FLAGS "/Y- /I${CMAKE_SOURCE_DIR}/Source/PCH/nopch")
 endif()
