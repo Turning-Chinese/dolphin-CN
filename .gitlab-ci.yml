@@ -72,10 +72,10 @@ assembleDebug:
   interruptible: true
   stage: build
   script:
-    - ./gradlew assembleDebug
+    - ./Source/Android/gradlew assembleDebug
   artifacts:
     paths:
-      - app/build/outputs/
+      - ./Source/Android/app/build/outputs/
 
 # Run all tests, if any fails, interrupt the pipeline(fail it)
 debugTests:
