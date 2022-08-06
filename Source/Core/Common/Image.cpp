@@ -95,8 +95,11 @@ bool SavePNG(const std::string& path, const u8* input, ImageByteFormat format, u
   if (spng_set_ihdr(ctx.get(), &ihdr))
     return false;
 
-  if (spng_encode_image(ctx.get(), nullptr, 0, SPNG_FMT_PNG, SPNG_ENCODE_PROGRESSIVE))
+  if (spng_encode_image(ctx.get(), nullptr, 0, SPNG_FMT_PNG,
+                        SPNG_ENCODE_PROGRESSIVE | SPNG_ENCODE_FINALIZE))
+  {
     return false;
+  }
   for (u32 row = 0; row < height; row++)
   {
     const int err = spng_encode_row(ctx.get(), &input[row * stride], stride);
@@ -113,7 +116,7 @@ bool SavePNG(const std::string& path, const u8* input, ImageByteFormat format, u
   size_t image_len = 0;
   spng_decoded_image_size(ctx.get(), SPNG_FMT_PNG, &image_len);
   INFO_LOG_FMT(FRAMEDUMP, "{} byte {} by {} image saved to {} at level {} in {}", image_len, width,
-               height, path, level, timer.GetTimeElapsedFormatted());
+               height, path, level, timer.ElapsedMs());
   return true;
 }
 

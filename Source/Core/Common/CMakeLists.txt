@@ -31,6 +31,8 @@ add_library(common
   Crypto/bn.h
   Crypto/ec.cpp
   Crypto/ec.h
+  Crypto/SHA1.cpp
+  Crypto/SHA1.h
   Debug/MemoryPatches.cpp
   Debug/MemoryPatches.h
   Debug/Threads.h
@@ -133,6 +135,21 @@ add_library(common
   WindowSystemInfo.h
   WorkQueueThread.h
 )
+
+if(MSVC AND _M_ARM_64)
+  # Workaround msvc arm64 optimizer bug
+  # TODO remove after updating to VS 17.4
+  set_source_files_properties(
+    Crypto/SHA1.cpp
+    PROPERTIES COMPILE_FLAGS "/d2ssa-peeps-post-color-")
+endif()
+
+if(NOT MSVC AND _M_ARM_64)
+  set_source_files_properties(
+    Crypto/AES.cpp
+    Crypto/SHA1.cpp
+    PROPERTIES COMPILE_FLAGS "-march=armv8-a+crypto")
+endif()
 
 target_link_libraries(common
 PUBLIC
