@@ -65,14 +65,14 @@ lintDebug:
   interruptible: true
   stage: build
   script:
-    - ./Source/Android/gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint
+    - cd ./Source/Android/ && ./gradlew -Pci --console=plain :app:lintDebug -PbuildDir=lint
 
 # Make Project
 assembleDebug:
   interruptible: true
   stage: build
   script:
-    - ./Source/Android/gradlew assembleDebug
+    - cd ./Source/Android/ && ./gradlew assembleDebug
   artifacts:
     paths:
       - app/build/outputs/
@@ -82,4 +82,4 @@ debugTests:
   interruptible: true
   stage: test
   script:
-    - ./Source/Android/gradlew -Pci --console=plain :app:testDebug
+    - cd ./Source/Android/ && ./gradlew -Pci --console=plain :app:testDebug
