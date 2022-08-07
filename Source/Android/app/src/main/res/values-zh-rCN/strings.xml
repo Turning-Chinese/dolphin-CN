@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Title of the app -->
+    <string name="app_name">Dolphin Emulator</string>
+    <string name="host">app</string>
+    <string name="scheme">dolphinemu</string>
+
+    <string name="controller_0">GameCube 控制器 1</string>
+    <string name="controller_1">GameCube 控制器 2</string>
+    <string name="controller_2">GameCube 控制器 3</string>
+    <string name="controller_3">GameCube 控制器 4</string>
+
+    <string name="controller_control">控制摇杆</string>
+    <string name="controller_c">C 摇杆</string>
+    <string name="controller_trig">扳机</string>
+    <string name="controller_dpad">D-Pad</string>
+    <string name="modifier_range">修饰范围</string>
+    <string name="analog_radius">模拟半径（高值=高灵敏度）</string>
+    <string name="analog_threshold">模拟阈值（低值=高灵敏度）</string>
+
+    <string name="wiimote_4">Wii 遥控器 1</string>
+    <string name="wiimote_5">Wii 遥控器 2</string>
+    <string name="wiimote_6">Wii 遥控器 3</string>
+    <string name="wiimote_7">Wii 遥控器 4</string>
+
+    <string name="wiimote_插件_4">Wii 遥控器 插件 1</string>
+    <string name="wiimote_插件_5">Wii 遥控器 插件 2</string>
+    <string name="wiimote_插件_6">Wii 遥控器 插件 3</string>
+    <string name="wiimote_插件_7">Wii 遥控器 插件 4</string>
+
+    <string name="wiimote_插件s">插件</string>
+    <string name="wiimote_插件s_description">选择并绑定Wii 遥控器 插件.</string>
+    <string name="wiimote_ir">红外线</string>
+    <string name="wiimote_swing">挥舞</string>
+    <string name="wiimote_tilt">倾斜</string>
+    <string name="wiimote_shake">摇动</string>
+
+    <string name="input_binding">输入绑定</string>
+    <string name="input_binding_description">按或移动输入将其绑定到%1$s。</string>
+    <string name="input_rumble_description">按下或移动任何输入以设置震动声.</string>
+
+    <!-- Generic buttons (Shared with lots of stuff) -->
+    <string name="generic_buttons">按钮</string>
+    <string name="generic_up">上</string>
+    <string name="generic_down">下</string>
+    <string name="generic_left">左</string>
+    <string name="generic_right">右</string>
+    <string name="generic_forward">前</string>
+    <string name="generic_backward">后</string>
+    <string name="generic_stick">摇杆</string>
+    <string name="generic_green">绿</string>
+    <string name="generic_red">红</string>
+    <string name="generic_yellow">黄</string>
+    <string name="generic_blue">蓝</string>
+    <string name="generic_orange">橙</string>
+
+    <!-- GameCube buttons (May be shared with other stuff too) -->
+    <string name="button_a">A</string>
+    <string name="button_b">B</string>
+    <string name="button_start">START</string>
+    <string name="button_x">X</string>
+    <string name="button_y">Y</string>
+    <string name="button_z">Z</string>
+    <string name="trigger_left">L</string>
+    <string name="trigger_right">R</string>
+
+    <!-- Wii 遥控器 buttons (May be shared with other stuff too) -->
+    <string name="button_one">1</string>
+    <string name="button_two">2</string>
+    <string name="button_minus">-</string>
+    <string name="button_plus">+</string>
+    <string name="button_home">HOME</string>
+    <string name="ir_hide">隐藏</string>
+    <string name="tilt_modifier">修饰</string>
+    <string name="shake_x">X</string>
+    <string name="shake_y">Y</string>
+    <string name="shake_z">Z</string>
+
+    <!-- Nunchuk only buttons -->
+    <string name="nunchuk_button_c">C</string>
+
+    <!-- Classic only buttons -->
+    <string name="classic_button_zl">ZL</string>
+    <string name="classic_button_zr">ZR</string>
+    <string name="classic_leftstick">左摇杆</string>
+    <string name="classic_rightstick">右摇杆</string>
+
+    <!-- Guitar only buttons -->
+    <string name="guitar_frets">品键</string>
+    <string name="guitar_strum">拨弦</string>
+    <string name="guitar_whammy">颤音</string>
+    <string name="guitar_whammy_bar">摇把</string>
+
+    <!-- Drums only buttons -->
+    <string name="drums_pads">鼓垫</string>
+    <string name="drums_pad_bass">低音</string>
+
+    <!-- Turntable only buttons -->
+    <string name="turntable_button_green_left">绿 左</string>
+    <string name="turntable_button_red_left">红 左</string>
+    <string name="turntable_button_blue_left">蓝 左</string>
+    <string name="turntable_button_green_right">绿 右</string>
+    <string name="turntable_button_red_right">红 右</string>
+    <string name="turntable_button_blue_right">蓝 右</string>
+    <string name="turntable_button_euphoria">Euphoria</string>
+    <string name="turntable_table_left">Table Left</string>
+    <string name="turntable_table_right">Table Right</string>
+    <string name="turntable_effect">Effect</string>
+    <string name="turntable_effect_dial">Dial</string>
+    <string name="turntable_crossfade">Crossfade</string>
+
+    <!-- Main Preference Fragment -->
+    <string name="设置">设置</string>
+    <string name="game_设置">游戏设置: %1$s</string>
+    <string name="config">配置</string>
+    <string name="graphics_设置">图形配置</string>
+    <string name="gcpad_设置">GameCube 输入</string>
+    <string name="wiimote_设置">Wii输入</string>
+    <string name="设置_saved">已将设置保存至INI文件</string>
+    <string name="设置_saved_game_specific">已保存%1$s的设置</string>
+
+    <!-- General Preference Fragment -->
+    <string name="general_submenu">通用</string>
+    <string name="dual_core">双核</string>
+    <string name="dual_core_description">将工作负载拆分为两个CPU核，而不是一个。增加速度.</string>
+    <string name="enable_cheats">开启金手指</string>
+    <string name="speed_limit">速度限制 (0% = 无限制)</string>
+    <string name="overclock_warning">警告：将此值从默认值（100%）更改将中断游戏并导致故障。请不要报告非默认CPU时钟出现的错误。</string>
+    <string name="gamecube_submenu">GameCube</string>
+    <string name="system_language">系统语言</string>
+    <string name="slot_a_device">GameCubeA槽设备</string>
+    <string name="slot_b_device">GameCubeB槽设备</string>
+    <string name="serial_port_1_device">GameCube串行端口1设备</string>
+    <string name="wii_submenu">Wii</string>
+    <string name="wii_misc_设置">杂项设置</string>
+    <string name="wii_sd_card_设置">SD卡设置</string>
+    <string name="wii_wiimote_设置">Wii 遥控器 设置</string>
+    <string name="wii_widescreen">宽屏</string>
+    <string name="wii_widescreen_description">在支持纵横比的游戏中将纵横比从4:3更改为16:9.</string>
+    <string name="wii_pal60">使用PAL60模式（EuRGB60）</string>
+    <string name="wii_pal60_description">在支持刷新率的PAL游戏中，将刷新率从50 Hz更改为60 Hz.</string>
+    <string name="wii_screensaver">启用屏幕保护程序</string>
+    <string name="wii_screensaver_description">五分钟不活动后，屏幕变暗.</string>
+    <string name="sound_mode">音频</string>
+    <string name="insert_sd_card">插入SD卡</string>
+    <string name="insert_sd_card_description">支持SD和SDHC。默认大小为128 MB.</string>
+    <string name="wii_sd_card_allow_writes">允许写入SD卡</string>
+    <string name="wii_sd_card_sync">自动与文件夹同步</string>
+    <string name="wii_sd_card_sync_description">启动和结束模拟时，将SD卡与SD Sync文件夹同步.</string>
+    <string name="wii_sd_card_path">SD卡路径</string>
+    <string name="wii_sd_sync_folder">SD卡同步文件夹</string>
+    <string name="wii_sd_card_folder_to_file">立即将文件夹转换为文件</string>
+    <string name="wii_sd_card_folder_to_file_confirmation">您将要将SD sync文件夹的内容转换为SD卡文件。将删除文件的所有当前内容。您确定要继续吗？</string>
+    <string name="wii_sd_card_file_to_folder">立即文件转换成文件夹</string>
+    <string name="wii_sd_card_file_to_folder_confirmation">您将要将SD卡文件的内容转换到SD sync文件夹中。将删除文件夹的所有当前内容。您确定要继续吗？</string>
+    <string name="wii_converting">转换中...</string>
+    <string name="wii_convert_success">转换完成.</string>
+    <string name="wii_convert_failure">转换失败.</string>
+    <string name="wiimote_rumble">Wii 遥控器震动</string>
+    <string name="wiimote_volume">Wii 遥控器扬声器音量</string>
+    <string name="sensor_bar_sensitivity">传感器条灵敏度</string>
+    <string name="sensor_bar_position">传感器杆位置</string>
+    <string name="wiimote_scanning">Wii 遥控器连续扫描</string>
+    <string name="wiimote_scanning_description">如果您使用DolphinBar来支持真正的Wii控制器，请将此选项保持打开状态.</string>
+    <string name="wiimote_speaker">Wii 遥控器扬声器</string>
+    <string name="wiimote_speaker_description">在真正的Wii遥控器上通过扬声器实现声音输出 (需要DolphinBar).</string>
+    <string name="override_region_设置">允许不匹配区域 设置</string>
+    <string name="auto_disc_change">自动更换光盘</string>
+    <string name="fallback_region">备用区域</string>
+    <string name="enable_save_states">开启保存状态</string>
+    <string name="enable_save_states_description">警告：保存状态可能与Dolphin的未来版本不兼容，在某些情况下可能无法创建正常保存. Never use savestates as the only way of saving your progress.</string>
+    <string name="analytics">启用使用统计信息报告</string>
+    <string name="analytics_desc">如果获得授权，Dolphin可以收集有关其性能、功能使用和配置的数据，以及系统硬件和操作系统的数据。\n\n从未收集任何私有数据。这些数据有助于我们了解人们和模拟游戏如何使用Dolphin，并确定我们的工作优先级。它还帮助我们识别导致错误、性能和稳定性问题的罕见配置。此授权可随时通过Dolphin's撤销设置.</string>
+    <string name="analytics_new_id">生成新的统计标识</string>
+    <string name="analytics_new_id_confirmation">是否确实要生成新的统计标识?</string>
+
+    <!-- SerialPort1 Subsetting Fragment -->
+    <string name="serialport1_submenu">串行端口1</string>
+    <string name="xlink_kai_guide_header">对于设置指令， <a href="https://www.teamxlink.co.uk/wiki/Dolphin">请参阅本页。</a></string>
+    <string name="xlink_kai_bba_ip">XLink Kai IP地址/主机名</string>
+    <string name="xlink_kai_bba_ip_description">运行XLink Kai客户端的设备的IP地址或主机名</string>
+    <string name="bba_builtin_dns">DNS服务器</string>
+    <string name="bba_builtin_dns_description">对于普通DNS，请使用8.8.8.8，否则请输入自定义DNS</string>
+
+    <!-- Interface Preference Fragment -->
+    <string name="interface_submenu">界面</string>
+    <string name="emulation_screen_orientation">模拟期间的屏幕方向</string>
+    <string name="expand_to_cutout_area">扩展到剪切区域</string>
+    <string name="expand_to_cutout_area_description">扩展显示区域以包括剪切（或凹口）区域.</string>
+    <string name="panic_handlers">使用恐慌处理程序</string>
+    <string name="panic_handlers_description">发生潜在严重错误时显示消息框。禁用此选项可以避免烦人的非致命消息，但可能会导致无法解释的重大崩溃.</string>
+    <string name="osd_messages">显示屏幕显示消息</string>
+    <string name="osd_messages_description">在模拟屏幕区域上显示消息。这些消息包括存储卡写入、视频后端和CPU信息以及JIT缓存清除。</string>
+    <string name="download_game_covers">从GameTDB.com下载游戏封面</string>
+
+    <!-- Online Update Region Select Fragment -->
+    <string name="region_select_title">请选择一个区域</string>
+    <string name="europe">欧洲</string>
+    <string name="japan">日本</string>
+    <string name="korea">韩国</string>
+    <string name="united_states">美国</string>
+
+    <!-- Online Update Progress Bar Fragment -->
+    <string name="updating">更新中</string>
+    <string name="updating_message">正在更新标题%016x…\n这可能需要一段时间.</string>
+    <string name="update_success">模拟的Wii控制台已经更新.</string>
+    <string name="already_up_to_date">模拟的Wii控制台已经是最新的了</string>
+    <string name="region_mismatch">游戏区域与您的主机区域不匹配。为避免系统菜单出现问题，无法使用此光盘更新模拟控制台。</string>
+    <string name="missing_update_partition">游戏光盘不包含任何可用的更新信息.</string>
+    <string name="disc_read_failed">游戏光盘不包含任何可用的更新信息.</string>
+    <string name="server_failed">"无法从任天堂下载更新信息。请检查您的Internet连接，然后重试。</string>
+    <string name="download_failed">无法从任天堂下载更新信息。请检查您的Internet连接，然后重试。.</string>
+    <string name="import_failed">"无法安装Wii系统内存的更新。有关更多信息，请参阅日志.</string>
+    <string name="update_cancelled">更新已取消。强烈建议完成此操作，以避免系统软件版本不一致.</string>
+    <string name="update_success_title">更新已完成</string>
+    <string name="update_failed_title">更新失败</string>
+    <string name="update_cancelled_title">更新已取消</string>
+
+    <!-- Audio 设置 -->
+    <string name="audio_submenu">音频</string>
+    <string name="dsp_emulation_engine">DSP仿真引擎</string>
+    <string name="audio_stretch">音频拉伸</string>
+    <string name="audio_stretch_descriptionDSP仿真引擎">伸展音频以减少卡顿。这会增加延迟.</string>
+    <string name="audio_volume">音频音量</string>
+
+    <!-- Path 设置 -->
+    <string name="paths_submenu">路径</string>
+    <string name="search_subfolders">搜索游戏文件的子文件夹</string>
+    <string name="default_ISO">默认ISO</string>
+    <string name="wii_NAND_root">Wii NAND根目录</string>
+    <string name="dump_path">转储路径</string>
+    <string name="load_path">加载路径</string>
+    <string name="resource_pack_path">资源包路径</string>
+    <string name="wfs_path">WFS路径</string>
+
+    <!-- Graphics 设置 -->
+    <string name="graphics_general">通用</string>
+    <string name="graphics_more_设置">更多</string>
+
+    <!-- Video Preference Fragment -->
+    <string name="video_backend">视频后端</string>
+    <string name="video_backend_description">选择用于图形渲染的API.</string>
+    <string name="show_fps_description">显示每秒渲染的帧数，作为模拟速度的度量</string>
+
+    <string name="enhancements_submenu">增强</string>
+    <string name="internal_resolution">内部分辨率</string>
+    <string name="internal_resolution_description">指定用于渲染的分辨率。高分辨率将大大提高视觉质量，但也会对性能造成很大影响，并可能在某些游戏中造成故障.</string>
+    <string name="FSAA">全场景抗锯齿</string>
+    <string name="FSAA_description">减少由光栅化3D图形引起的锯齿量。这使渲染的图片看起来不那么块状。严重降低仿真速度，有时会导致问题.</string>
+    <string name="anisotropic_filtering">各向异性过滤</string>
+    <string name="anisotropic_filtering_description">增强斜视角纹理的视觉质量。可能会在少量游戏中引发问题.</string>
+    <string name="post_processing_shader">后处理效果</string>
+    <string name="post_processing_shader_description">在完成帧后应用后处理效果</string>
+    <string name="postprocessing_shader">后处理着色器</string>
+    <string name="postprocessing_shader_description">在完成帧后应用后处理效果.</string>
+    <string name="scaled_efb_copy">缩放 EFB 副本</string>
+    <string name="scaled_efb_copy_description">极大地提高了使用“渲染到纹理”效果生成的纹理的质量。提高内部分辨率将改善此设置的效果。略微降低性能并可能导致问题（尽管可能性不大）。</string>
+    <string name="per_pixel_lighting">逐像素光照</string>
+    <string name="per_pixel_lighting_description">计算每个像素而不是每个顶点的三维图形照明。将仿真速度降低一些百分比（取决于您的GPU）。这通常是一种安全的增强，但有时可能会导致问题。</string>
+    <string name="force_texture_filtering">强制纹理滤波</string>
+    <string name="force_texture_filtering_description">强制纹理过滤，即使模拟游戏明确禁用它。略微提高纹理质量，但在某些游戏中会导致小故障。</string>
+    <string name="force_24bit_color">强制24位色</string>
+    <string name="force_24bit_color_description">强制游戏以24位渲染RGB颜色通道，从而通过减少色带来提高质量。\n这对性能没有影响，并且很少引起图形问题。如果不确定，请保持选中状态。</string>
+    <string name="disable_fog">禁用雾</string>
+    <string name="disable_fog_description">通过消除雾，使远处的对象更加可见，从而增加整体细节。禁用雾将破坏一些依赖于正确雾模拟的游戏。</string>
+    <string name="disable_copy_filter">禁用复制过滤</string>
+    <string name="disable_copy_filter_description">禁用复制 EFB 时相邻行间的混合。一些游戏称之为\"抗闪烁\" or \"平滑\". 禁用此过滤器对性能没有影响，但会使图像更锐利，且很少导致图像问题.</string>
+    <string name="arbitrary_mipmap_detection">特殊多级纹理检测</string>
+    <string name="arbitrary_mipmap_detection_description">允许检测任意的mipmap，某些游戏将其用于基于距离的特殊效果。\n可能存在误报，导致内部分辨率增加时纹理模糊，例如在使用极低分辨率MIPMap的游戏中。禁用此选项还可以减少频繁加载新纹理的游戏中的卡顿。\n\n如果不确定，请保持选中状态。</string>
+    <string name="stereoscopy_submenu">立体3D显示</string>
+    <string name="stereoscopy_submenu_description">如果你有必要的硬件，立体镜可以让你获得更好的深度感。\n严重降低仿真速度，有时会导致问题</string>
+    <string name="wide_screen_hack">宽屏修正</string>
+    <string name="wide_screen_hack_description">强制游戏输出任何纵横比的图形。使用时将“纵横比”设置为“强制16:9”，以强制仅4:3的游戏以16:9运行。很少产生良好的效果，并且经常部分破坏图形和游戏UI。\n如果使用任何AR/Gecko代码宽屏补丁，这是不必要的（也是有害的）。如果不确定，请不要选中此选项。</string>
+    <string name="stereoscopy_mode">立体模式</string>
+    <string name="stereoscopy_mode_description">选择立体3D模式。</string>
+    <string name="stereoscopy_depth">深度</string>
+    <string name="stereoscopy_depth_description">控制虚拟摄像机之间的距离。\n值越高，深度感越强，而值越低，越舒适。</string>
+    <string name="stereoscopy_convergence">会聚</string>
+    <string name="stereoscopy_convergence_description">控制收敛平面的距离，这是对象显示在屏幕前面的距离。\n值越高，屏幕外效果越强，而值越低，越舒适。</string>
+    <string name="stereoscopy_swap_eyes">交换眼睛</string>
+    <string name="stereoscopy_swap_eyes_description">交换左眼和右眼，如果您想并排斜眼观看，这非常有用.</string>
+
+    <string name="hacks_submenu">修正</string>
+    <string name="embedded_frame_buffer">内置帧缓冲 (EFB)</string>
+    <string name="skip_efb_access">从CPU跳过EFB访问</string>
+    <string name="skip_efb_access_description">忽略CPU对EFB的读/写请求.</string>
+    <string name="ignore_format_changes">忽略格式更改</string>
+    <string name="ignore_format_changes_description">忽略对EFB格式的任何更改。</string>
+    <string name="efb_copy_method">仅将EFB副本存储到纹理</string>
+    <string name="efb_copy_method_description">绕过系统内存，仅在GPU上存储EFB拷贝。在少数游戏中导致图形缺陷。如果不确定，请保持选中状态。</string>
+    <string name="defer_efb_copies">延迟EFB拷贝到RAM</string>
+    <string name="defer_efb_copies_description">在将EFB副本的内容写入RAM之前，等待游戏与模拟GPU同步。可能导致更快的性能。如果不确定，请不要选中此选项。</string>
+    <string name="texture_cache">纹理缓存</string>
+    <string name="texture_cache_accuracy">纹理缓存精度</string>
+    <string name="texture_cache_accuracy_description">选择越安全，模拟器丢失RAM中任何纹理更新的可能性就越小。</string>
+    <string name="gpu_texture_decoding">GPU纹理解码</string>
+    <string name="gpu_texture_decoding_description">在支持的情况下，使用计算着色器在GPU上解码纹理。在某些情况下可能会提高性能。</string>
+    <string name="external_frame_buffer">外部帧缓冲 (XFB)</string>
+    <string name="xfb_copy_method">仅将XFB副本存储到纹理</string>
+    <string name="xfb_copy_method_description">仅在GPU上存储XFB拷贝，绕过系统内存。在少数需要从内存读回的游戏中导致图形缺陷。如果不确定，请保持选中状态。</string>
+    <string name="immediate_xfb">立即呈现XFB</string>
+    <string name="immediate_xfb_description">创建XFB副本后立即显示，无需等待扫描。在某些游戏中会导致图形缺陷，但会减少延迟。如果不确定，请不要选中此选项。</string>
+    <string name="skip_duplicate_xfbs">跳过显示重复帧</string>
+    <string name="skip_duplicate_xfbs_description">跳过重复帧的显示。这可能会提高低端设备的性能，同时降低帧速度的一致性。如果不确定，请保持选中状态。</string>
+    <string name="fast_depth_calculation">快速深度计算</string>
+    <string name="fast_depth_calculation_description">使用精度较低的算法计算深度值。在一些游戏中会导致问题，但根据游戏和/或GPU的不同，可能会带来不错的速度提升。如果不确定，请保持选中状态。</string>
+    <string name="disable_bbox">禁用边界框</string>
+    <string name="disable_bbox_description">禁用边界框模拟。这可能会显著提高GPU性能，但有些游戏会崩溃。如果不确定，请保持选中状态。</string>
+    <string name="vertex_rounding">顶点舍入</string>
+    <string name="vertex_rounding_description">将二维顶点舍入为整像素，并将视口大小舍入为整数。以更高的内部分辨率修复某些游戏中的图形问题。使用本机内部分辨率时，此设置无效。如果不确定，请不要选中此选项。</string>
+    <string name="texture_cache_to_state">将纹理缓存保存到状态</string>
+    <string name="texture_cache_to_state_description">包括处于保存状态的嵌入式帧缓冲区（EFB）和放大EFB副本的内容。以额外的保存/加载时间为代价，修复加载状态时丢失和/或未放大的纹理/对象。</string>
+    <string name="aspect_ratio">纵横比</string>
+    <string name="aspect_ratio_description">选择渲染时要使用的纵横比</string>
+    <string name="shader_compilation_mode">着色器编译模式</string>
+    <string name="wait_for_shaders">在开始之前编译着色器</string>
+    <string name="wait_for_shaders_description">这会导致启动游戏的延迟，但会减少早期的卡顿。</string>
+
+    <string name="advanced_graphics_submenu">高级</string>
+    <string name="gfx_mods_and_custom_textures">图形、模型和自定义纹理</string>
+    <string name="gfx_mods">图形模块</string>
+    <string name="gfx_mods_description">从User/Load/GraphicsMods/加载图形mods。</string>
+    <string name="load_custom_texture">加载自定义纹理</string>
+    <string name="load_custom_texture_description">从 User/Load/Textures/&lt;game_id&gt;/ 和 User/Load/DynamicInputTextures/&lt;game_id&gt;/ 加载自定义纹理。</string>
+    <string name="cache_custom_texture">预取自定义纹理</string>
+    <string name="cache_custom_texture_description">启动时将自定义纹理缓存到系统RAM。这可能需要成倍增加的RAM，但修复了可能的卡顿。</string>
+    <string name="dump_texture">转储纹理</string>
+    <string name="dump_texture_description">将基于其他标志的已解码游戏纹理转储到 User/Dump/Textures/&lt;game_id&gt;/  如果不确定，请不要选中此项。</string>
+    <string name="dump_base_texture">Dump Base Textures</string>
+    <string name="dump_base_texture_description">Whether to dump base game textures to User/Dump/Textures/&lt;game_id&gt;/.</string>
+    <string name="dump_mip_texture">Dump Mip Maps</string>
+    <string name="dump_mip_texture_description">Whether to dump mipmapped game textures to User/Dump/Textures/&lt;game_id&gt;/.</string>
+    <string name="misc">Misc</string>
+    <string name="crop">Crop</string>
+    <string name="crop_description">Crops the picture from its native aspect ratio to 4:3 or 16:9. If unsure, leave this unchecked.</string>
+    <string name="progressive_scan">Enable Progressive Scan</string>
+    <string name="backend_multithreading">Backend Multithreading</string> <!--Backend Multithreading is only disabled by default on Android  -->
+    <string name="backend_multithreading_description">Enables graphics backend multithreading (Vulkan only). May affect performance. If unsure, leave this unchecked.</string>
+    <string name="defer_efb_invalidation">Defer EFB Cache Invalidation</string>
+    <string name="defer_efb_invalidation_description">Defers invalidation of the EFB access cache until a GPU synchronization command is executed. May improve performance in some games at the cost of stability. If unsure, leave this unchecked.</string>
+    <string name="manual_texture_sampling">Manual Texture Sampling</string>
+    <string name="manual_texture_sampling_description">Use a manual implementation of texture sampling instead of the graphics backend\'s built-in functionality.</string>
+    <string name="internal_resolution_dumps">Dump Frames at Internal Resolution</string>
+    <string name="internal_resolution_dumps_description">Creates frame dumps and screenshots at the internal resolution of the renderer, rather than the size of the window it is displayed within. If the aspect ratio is widescreen, the output image will be scaled horizontally to preserve the vertical resolution.</string>
+    <string name="debugging">Debugging</string>
+    <string name="wireframe">Enable Wireframe</string>
+    <string name="show_stats">Show Statistics</string>
+    <string name="texture_format">Texture Format Overlay</string>
+    <string name="validation_layer">Enable API Validation Layers</string>
+    <string name="dump_efb">Dump EFB Target</string>
+    <string name="dump_xfb">Dump XFB Target</string>
+    <string name="disable_vram_copies">Disable EFB VRAM Copies</string>
+    <string name="leave_this_unchecked">If unsure, leave this unchecked.</string>
+
+    <!-- Advanced 设置 -->
+    <string name="advanced_submenu">Advanced</string>
+    <string name="cpu_core">CPU Core</string>
+    <string name="mmu_enable">Enable MMU</string>
+    <string name="mmu_enable_description">Enables the Memory Management Unit. Needed for some games, but may reduce performance.</string>
+    <string name="overclock_enable">Override Emulated CPU Clock Speed</string>
+    <string name="overclock_enable_description">Higher values can make variable-framerate games run at a higher framerate, requiring a powerful device. Lower values make games run at a lower framerate, increasing emulation speed, but reducing the emulated console\'s performance.</string>
+    <string name="overclock_title">Emulated CPU Clock Speed</string>
+    <string name="overclock_title_description">Adjusts the emulated CPU\'s clock rate if \"Override Emulated CPU Clock Speed\" is enabled.</string>
+    <string name="synchronize_gpu_thread">Synchronize GPU Thread</string>
+    <string name="synchronize_gpu_thread_description">Synchronizing the GPU thread reduces the risk of games crashing or becoming unstable with dual core enabled, but can also reduce the performance gain of dual core. If unsure, select \"On Idle Skipping\". Selecting \"Never\" is risky and not recommended!</string>
+
+    <!-- Log Configuration -->
+    <string name="log_submenu">Log</string>
+    <string name="log_to_file">Write Logs to File</string>
+    <string name="log_to_file_description">Log messages from enabled log types to the Logs folder. Will decrease performance.</string>
+    <string name="log_verbosity">Verbosity</string>
+    <string name="log_enable_all">Enable all Log Types</string>
+    <string name="log_enable_all_confirmation">Are you sure you want to enable all log types?</string>
+    <string name="log_disable_all">Disable all Log Types</string>
+    <string name="log_disable_all_confirmation">Are you sure you want to disable all log types?</string>
+    <string name="log_clear">Clear Log file</string>
+    <string name="log_clear_confirmation">Are you sure you want to clear the log file?</string>
+    <string name="log_types">Log Types</string>
+
+    <!-- Debug -->
+    <string name="debug_submenu">Debug</string>
+    <string name="debug_warning">Warning: Debug 设置 will slow emulation</string>
+    <string name="debug_fastmem">Disable Fastmem</string>
+    <string name="debug_jit_header">Jit</string>
+    <string name="debug_jitoff">Jit Disabled</string>
+    <string name="debug_jitloadstoreoff">Jit Load Store Disabled</string>
+    <string name="debug_jitloadstorefloatingoff">Jit Load Store Floating Point Disabled</string>
+    <string name="debug_jitloadstorepairedoff">Jit Load Store Paired Disabled</string>
+    <string name="debug_jitfloatingpointoff">Jit Floating Point Disabled</string>
+    <string name="debug_jitintegeroff">Jit Integer Disabled</string>
+    <string name="debug_jitpairedoff">Jit Paired Disabled</string>
+    <string name="debug_jitsystemregistersoff">Jit System Registers Disabled</string>
+    <string name="debug_jitbranchoff">Jit Branch Disabled</string>
+    <string name="debug_jitregistercacheoff">Jit Register Cache Disabled</string>
+
+    <!-- User Data -->
+    <string name="user_data_submenu">User Data</string>
+    <string name="user_data_old_location">Your user data (设置, saves, etc.) is stored in a location which will <b>not</b> be deleted when you uninstall the app:</string>
+    <string name="user_data_new_location">Your user data (设置, saves, etc.) is stored in a location which <b>will be deleted</b> when you uninstall the app:</string>
+    <!-- Android 10 and up support android:hasFragileUserData -->
+    <string name="user_data_new_location_android_10">Your user data (设置, saves, etc.) is stored in a location which by default <b>will be deleted</b> when you uninstall the app:</string>
+    <string name="user_data_new_location_android_11">Because you\'re using Android 11 or newer, file manager apps can\'t access this folder in the same way as regular folders. You might be able to access the folder using the system file manager (if present on your device), or by connecting your device to a PC.</string>
+    <string name="user_data_open_system_file_manager">Open System File Manager</string>
+    <string name="user_data_import">Import User Data</string>
+    <string name="user_data_export">Export User Data</string>
+    <string name="user_data_open_system_file_manager_failed">Sorry, Dolphin couldn\'t find the system file manager on your device.</string>
+    <string name="user_data_import_warning">Are you sure you want to replace your user data with the data in this file? All existing user data will be deleted!</string>
+    <string name="user_data_import_invalid_file">This file doesn\'t seem to contain Dolphin user data.</string>
+    <string name="user_data_import_success">The user data has been imported.</string>
+    <string name="user_data_import_failure">Failed to import user data.</string>
+    <string name="user_data_export_success">Your user data has been exported.</string>
+    <string name="user_data_export_failure">Failed to export user data.</string>
+
+    <!-- Miscellaneous -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="off">Off</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="disabled">Disabled</string>
+    <string name="other">Other</string>
+    <string name="continue_anyway">Continue Anyway</string>
+
+    <!-- Game Grid Screen-->
+    <string name="platform_gamecube">GameCube Games</string>
+    <string name="platform_wii">Wii Games</string>
+    <string name="platform_wiiware">WiiWare Games</string>
+    <string name="add_directory_title">Add Folder to Library</string>
+    <string name="grid_menu_设置">设置</string>
+    <string name="grid_menu_refresh">Refresh Library</string>
+    <string name="grid_menu_open_file">Open File</string>
+    <string name="grid_menu_install_wad">Install WAD</string>
+    <string name="grid_menu_import_wii_save">Import Wii Save</string>
+    <string name="grid_menu_import_nand_backup">Import BootMii NAND Backup</string>
+    <string name="grid_menu_online_system_update">Perform Online System Update</string>
+    <string name="grid_menu_load_wii_system_menu">Load Wii System Menu</string>
+    <string name="grid_menu_load_wii_system_menu_installed">Load Wii System Menu (%s)</string>
+    <string name="import_in_progress">Importing...</string>
+    <string name="export_in_progress">Exporting...</string>
+    <string name="do_not_close_app">Do not close the app!</string>
+    <string name="wad_install_success">Successfully installed this title to the NAND.</string>
+    <string name="wad_install_failure">Failed to install this title to the NAND.</string>
+    <string name="wii_save_exists">Save data for this title already exists in the NAND. Consider backing up the current data before overwriting.\nOverwrite now?</string>
+    <string name="wii_save_import_success">Successfully imported save file.</string>
+    <string name="wii_save_import_error">Failed to import save file. Your NAND may be corrupt, or something is preventing access to files within it.</string>
+    <string name="wii_save_import_corruped_source">Failed to import save file. The given file appears to be corrupted or is not a valid Wii save.</string>
+    <string name="wii_save_import_title_missing">Failed to import save file. Please launch the game once, then try again.</string>
+    <string name="nand_import_warning">Merging a new NAND over your currently selected NAND will overwrite any channels and savegames that already exist. This process is not reversible, so it is recommended that you keep backups of both NANDs. Are you sure you want to continue?</string>
+    <string name="system_menu_not_installed_title">Not installed</string>
+    <string name="system_menu_not_installed_message">The Wii Menu is currently not installed. Would you like to install it now?\nAn internet connection is required to download the update. It is recommended to download the update on Wi-Fi, as the amount of data downloaded may be large.</string>
+
+    <!-- Game Properties Screen -->
+    <string name="properties_details">Details</string>
+    <string name="properties_start_with_riivolution">Start with Riivolution Patches</string>
+    <string name="properties_set_default_iso">Set as Default ISO</string>
+    <string name="properties_convert">Convert File</string>
+    <string name="properties_system_update">Perform System Update</string>
+    <string name="properties_edit_game_设置">Edit Game 设置</string>
+    <string name="properties_edit_cheats">Edit Cheats</string>
+    <string name="properties_clear_game_设置">Clear Game 设置 and Cheats</string>
+    <string name="properties_clear_game_设置_confirmation">Are you sure you want to delete all game-specific 设置 and cheats for this game?</string>
+    <string name="properties_clear_success">Cleared 设置 for %1$s</string>
+    <string name="properties_clear_failure">Unable to clear 设置 for %1$s</string>
+    <string name="properties_clear_missing">No game 设置 to delete</string>
+    <string name="preferences_save_exit">Save and Exit</string>
+    <string name="preferences_game_properties">Game Properties</string>
+    <string name="preferences_game_properties_with_game_id">Game Properties: %1$s</string>
+    <string name="preferences_插件s">插件 Bindings</string>
+    <string name="game_ini_junk_title">Junk Data Found</string>
+    <string name="game_ini_junk_question">The 设置 file for this game contains extraneous data added by an old version of Dolphin. This will likely prevent global 设置 from working as intended.\n\nWould you like to fix this by deleting the 设置 file for this game? All game-specific 设置 and cheats that you have added will be removed. This cannot be undone.</string>
+
+    <!-- Game Details Screen -->
+    <string name="game_details_country">Country</string>
+    <string name="game_details_company">Company</string>
+    <string name="game_details_game_id">Game ID</string>
+    <string name="game_details_revision">Revision</string>
+    <string name="game_details_file_size">File Size</string>
+    <string name="game_details_file_format">File Format</string>
+    <string name="game_details_compression">Compression</string>
+    <string name="game_details_block_size">Block Size</string>
+    <string name="game_details_no_compression">No Compression</string>
+    <string name="game_details_size_and_format">%1$s (%2$s)</string>
+
+    <!-- Cheats Screen -->
+    <string name="cheats">Cheats</string>
+    <string name="cheats_with_game_id">Cheats: %1$s</string>
+    <string name="cheats_header_ar">AR Codes</string>
+    <string name="cheats_header_gecko">Gecko Codes</string>
+    <string name="cheats_header_patch">Patches</string>
+    <string name="cheats_header_graphics_mod">Graphics Mods</string>
+    <string name="cheats_add_ar">Add New AR Code</string>
+    <string name="cheats_add_gecko">Add New Gecko Code</string>
+    <string name="cheats_add_patch">Add New Patch</string>
+    <string name="cheats_download_gecko">Download Gecko Codes</string>
+    <string name="cheats_name">Name</string>
+    <string name="cheats_creator">Creator</string>
+    <string name="cheats_notes">Notes</string>
+    <string name="cheats_code">Code</string>
+    <string name="cheats_edit">Edit</string>
+    <string name="cheats_delete">Delete</string>
+    <string name="cheats_delete_confirmation">Are you sure you want to delete "%1$s"?</string>
+    <string name="cheats_error_no_name">Name can\'t be empty</string>
+    <string name="cheats_error_no_code_lines">Code can\'t be empty</string>
+    <string name="cheats_error_on_line">Error on line %1$d</string>
+    <string name="cheats_error_mixed_encryption">Lines must either be all encrypted or all decrypted</string>
+    <string name="cheats_downloading">Downloading...</string>
+    <string name="cheats_download_failed">Failed to download codes.</string>
+    <string name="cheats_download_empty">File contained no codes.</string>
+    <string name="cheats_download_succeeded">Downloaded %1$d codes. (added %2$d)</string>
+    <string name="cheats_disabled_warning">Dolphin\'s cheat system is currently disabled.</string>
+    <string name="gfx_mods_disabled_warning">Graphics mods are currently disabled.</string>
+    <string name="cheats_open_设置">设置</string>
+
+    <!-- Convert Screen -->
+    <string name="convert_format">Format</string>
+    <string name="convert_block_size">Block Size</string>
+    <string name="convert_compression">Compression</string>
+    <string name="convert_compression_level">Compression Level</string>
+    <string name="convert_remove_junk_data">Remove Junk Data (Irreversible)</string>
+    <string name="convert_convert">Convert</string>
+    <string name="convert_converting">Converting</string>
+    <string name="convert_warning_iso">Removing junk data does not save any space when converting to ISO (unless you package the ISO file in a compressed file format such as ZIP afterwards). Do you want to continue anyway?</string>
+    <string name="convert_warning_gcz">Converting Wii disc images to GCZ without removing junk data does not save any noticeable amount of space compared to converting to ISO. Do you want to continue anyway?</string>
+    <string name="convert_warning_nkit">Dolphin can\'t convert NKit files to non-NKit files. Converting an NKit file in Dolphin will result in another NKit file.\n\nIf you want to convert an NKit file to a non-NKit file, you can use the same program as you originally used when converting the file to the NKit format.\n\nDo you want to continue anyway?</string>
+    <string name="convert_success_message">The disc image was successfully converted.</string>
+    <string name="convert_failure_message">Dolphin failed to complete the requested action.</string>
+    <string name="convert_format_info">
+ISO: A simple and robust format which is supported by many programs. It takes up more space
+than any other format.
+\n\nGCZ: A basic compressed format which is compatible with most versions of Dolphin and some
+other programs. It can\'t efficiently compress junk data (unless removed) or encrypted Wii data.
+\n\nWIA: An advanced compressed format which is compatible with Dolphin 5.0-12188 and later,
+and a few other programs. It can efficiently compress encrypted Wii data, but not junk data
+(unless removed).
+\n\nRVZ: An advanced compressed format which is compatible with Dolphin 5.0-12188 and later.
+It can efficiently compress both junk data and encrypted Wii data.
+    </string>
+
+    <!-- Riivolution Boot Screen -->
+    <string name="riivolution_sd_root">SD Root: %1$s</string>
+    <string name="riivolution_disabled">Disabled</string>
+    <string name="riivolution_start">Start</string>
+
+    <!-- Emulation Menu -->
+    <string name="pause_emulation">Pause Emulation</string>
+    <string name="unpause_emulation">Unpause Emulation</string>
+    <string name="emulation_screenshot">Take Screenshot</string>
+    <string name="emulation_savestate">Save State</string>
+    <string name="emulation_loadstate">Load State</string>
+    <string name="emulation_exit">Exit Emulation</string>
+    <string name="emulation_state_slot">Slot %1$d\n\n%2$s</string>
+    <string name="emulation_state_slot_empty">Slot %1$d\n\nEmpty</string>
+    <string name="emulation_quicksave">Quick Save</string>
+    <string name="emulation_quickload">Quick Load</string>
+    <string name="emulation_refresh_wiimotes">Refresh Wii 遥控器s</string>
+    <string name="emulation_overlay_controls">Overlay Controls</string>
+    <string name="emulation_edit_layout">Edit Layout</string>
+    <string name="emulation_done">Done</string>
+    <string name="emulation_toggle_controls">Toggle Controls</string>
+    <string name="emulation_toggle_all">Toggle All</string>
+    <string name="emulation_control_scale">Adjust Scale</string>
+    <string name="emulation_control_opacity">Adjust Opacity</string>
+    <string name="emulation_control_adjustments">Adjust Controls</string>
+    <string name="emulation_control_joystick_rel_center">Relative Stick Center</string>
+    <string name="emulation_control_rumble">Rumble</string>
+    <string name="emulation_choose_controller">Choose Controller</string>
+    <string name="emulation_menu_help">Press Back to access the menu.\nLong press Back to exit emulation.</string>
+    <string name="emulation_touch_overlay_reset">Reset Overlay</string>
+    <string name="emulation_ir_group">Touch IR Pointer</string>
+    <string name="emulation_ir_recenter">Always recenter</string>
+    <string name="emulation_ir_mode">IR Mode</string>
+    <string name="emulation_ir_sensitivity">IR Sensitivity</string>
+    <string name="emulation_choose_doubletap">Double tap button</string>
+    <string name="emulation_motion_controls">Motion Controls</string>
+
+    <!-- GC Adapter Menu-->
+    <string name="gc_adapter_rumble">Enable Vibration</string>
+    <string name="gc_adapter_rumble_description">Enable the vibration function for this GameCube 控制器.</string>
+    <string name="gc_adapter_bongos">Bongo Controller</string>
+    <string name="gc_adapter_bongos_description">Enable this if you are using bongos on this port.</string>
+
+    <!-- Wii 遥控器 Input Menu-->
+    <string name="header_wiimote_general">General</string>
+    <string name="header_controllers">Controllers</string>
+
+    <!-- Rumble -->
+    <string name="rumble_not_found">Device rumble not found</string>
+
+    <string name="path_not_changeable_scoped_storage">Due to the Scoped Storage policy in Android 11 and newer, you can\'t change this path.</string>
+    <string name="load_设置">Loading 设置...</string>
+    <string name="setting_not_runtime_editable">This setting can\'t be changed while a game is running.</string>
+    <string name="setting_clear_info">Long press a setting to clear it.</string>
+    <string name="setting_clear_confirm">Do you want to restore this setting to its default value?</string>
+    <string name="setting_cleared">Setting cleared</string>
+    <string name="emulation_change_disc">Change Disc</string>
+
+    <string name="external_storage_not_mounted">The external storage needs to be available in order to use Dolphin</string>
+
+    <!-- Extra Leanback Homescreen Channels-->
+    <string name="homescreen_favorites">Favorites</string>
+
+    <string name="select_dir">Select This Directory</string>
+
+    <!-- File Pickers -->
+    <string name="no_file_插件">The selected file does not appear to have a file name 插件.\n\nContinue anyway?</string>
+    <string name="wrong_file_插件_single">The selected file has the file name 插件 \"%1$s\", but \"%2$s\" was expected.\n\nContinue anyway?</string>
+    <string name="wrong_file_插件_multiple">The selected file has the file name 插件 \"%1$s\", but one of these 插件s was expected: %2$s\n\nContinue anyway?</string>
+    <string name="wrong_file_插件_in_directory">No compatible files were found in the selected location.\n\nThe supported formats are: %1$s</string>
+    <string name="unavailable_paths">Dolphin does not have permission to access one or more configured paths. Would you like to fix this before starting?</string>
+
+    <!-- Misc -->
+    <string name="pitch">Total Pitch</string>
+    <string name="yaw">Total Yaw</string>
+    <string name="vertical_offset">Vertical Offset</string>
+    <string name="default_values">Default Values</string>
+    <string name="slider_setting_value">%1$d%2$s</string>
+    <string name="disc_number">Disc %1$d</string>
+    <string name="replug_gc_adapter">GameCube Adapter couldn\'t be opened. Please re-plug the device.</string>
+    <string name="disabled_gc_overlay_notice">GameCube 控制器 1 is set to \"None\"</string>
+    <string name="ignore_warning_alert_messages">Ignore for this session</string>
+    <string name="make_sure_continuous_scan_enabled">Please make sure Continuous Scanning is enabled in Core 设置.</string>
+
+</resources>
