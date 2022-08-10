@@ -1,83 +1,75 @@
-# Dolphin - A GameCube and Wii Emulator
+# Dolphin - GameCube和Wii模拟器
 
-[Homepage](https://dolphin-emu.org/) | [Project Site](https://github.com/dolphin-emu/dolphin) | [Buildbot](https://dolphin.ci) | [Forums](https://forums.dolphin-emu.org/) | [Wiki](https://wiki.dolphin-emu.org/) | [Issue Tracker](https://bugs.dolphin-emu.org/projects/emulator/issues) | [Coding Style](https://github.com/dolphin-emu/dolphin/blob/master/Contributing.md) | [Transifex Page](https://www.transifex.com/projects/p/dolphin-emu/)
+[主页](https://dolphin-emu.org/) | [项目网站](https://github.com/dolphin-emu/dolphin) | [构建机器人](https://dolphin.ci) | [论坛](https://forums.dolphin-emu.org/) | [维基](https://wiki.dolphin-emu.org/) | [Issue追踪](https://bugs.dolphin-emu.org/projects/emulator/issues) | [代码风格](https://github.com/dolphin-emu/dolphin/blob/master/Contributing.md) | [Transifex网页](https://www.transifex.com/projects/p/dolphin-emu/)
 
-Dolphin is an emulator for running GameCube and Wii games on Windows,
-Linux, macOS, and recent Android devices. It's licensed under the terms
-of the GNU General Public License, version 2 or later (GPLv2+).
+Dolphin是一个可以在Windows,Linux,Mac OS和近些年来发布的 Android设备上运行GameCube和Wii游戏的模拟器。它是根据条款许可的
+GNU通用公共许可证，版本2或更高版本（GPLv2+）。
 
-Please read the [FAQ](https://dolphin-emu.org/docs/faq/) before using Dolphin.
+请在阅读[常见问题回复](https://dolphin-emu.org/docs/faq/)后再使用Dolphin。
 
-## System Requirements
+## 系统要求
 
-### Desktop
+### 桌面端
 
 * OS
-    * Windows (10 or higher).
+    * Windows (10或更高版本).
     * Linux.
-    * macOS (10.14 Mojave or higher).
-    * Unix-like systems other than Linux are not officially supported but might work.
-* Processor
-    * A CPU with SSE2 support.
-    * A modern CPU (3 GHz and Dual Core, not older than 2008) is highly recommended.
-* Graphics
-    * A reasonably modern graphics card (Direct3D 11.1 / OpenGL 3.3).
-    * A graphics card that supports Direct3D 11.1 / OpenGL 4.4 is recommended.
+    * macOS (10.14 Mojave或更高版本).
+    * 除了Linux之外的类UNIX系统不受官方支持但也许能运行。
+* 处理器
+    * 支持SSE2 的CPU。
+    * 推荐近些年来才上市的CPU(双核3GHz，上市时间不得早于2008年)
+* 图形
+    * 好显卡(支持Direct3D 11.1 / OpenGL 3.3)
+    * 推荐支持 Direct3D 11.1 / OpenGL 4.4的显卡
 
 ### Android
 
 * OS
-    * Android (5.0 Lollipop or higher).
-* Processor
-    * A processor with support for 64-bit applications (either ARMv8 or x86-64).
-* Graphics
-    * A graphics processor that supports OpenGL ES 3.0 or higher. Performance varies heavily with [driver quality](https://dolphin-emu.org/blog/2013/09/26/dolphin-emulator-and-opengl-drivers-hall-fameshame/).
-    * A graphics processor that supports standard desktop OpenGL features is recommended for best performance.
+    * Android (5.0 Lollipop或更高版本).
+* 处理器
+    * 支持64位应用程序的处理器(ARMv8或 x86-64)
+* 图形
+    * 一个支持OpenGL ES 3.0或更高版本的GPU。[设备质量](https://dolphin-emu.org/blog/2013/09/26/dolphin-emulator-and-opengl-drivers-hall-fameshame/)会对模拟性能有很大的影响。
+    * 支持桌面端OpenGL功能的GPU可以提供最佳性能。
 
-Dolphin can only be installed on devices that satisfy the above requirements. Attempting to install on an unsupported device will fail and display an error message.
+Dolphin只能安装在满足上述要求的设备上。试图安装在不受支持的设备上将会无法运行且会弹出一条错误信息。
 
-## Building for Windows
+## 为Windows端构建Dolphin
 
-Use the solution file `Source/dolphin-emu.sln` to build Dolphin on Windows.
-Visual Studio 2022 17.2.3 or later is a hard requirement. Other compilers might be
-able to build Dolphin on Windows but have not been tested and are not
-recommended to be used. Git and Windows 11 SDK must be installed when building.
+使用解决方案文件`Source/dolphin-emu.sln`来在Windows上构建Dolphin。Visual Studio版本必须得是2022 17.2.3或更高的版本。其他的编译程序也许可以在Windows端上构建Dolphin，但是这种方式未经我们测试且不推荐。在构建之前必须安装Git和Windows 11 SDK。
 
-Make sure to pull submodules before building:
+在构建之前使用以下命令确保子模块已被拉取下来:
 ```sh
 git submodule update --init
 ```
 
-The "Release" solution configuration includes performance optimizations for the best user experience but complicates debugging Dolphin.
-The "Debug" solution configuration is significantly slower, more verbose and less permissive but makes debugging Dolphin easier.
+"Release"解决方案包含最好的性能优化体验但也使调试Dolphin变得更加复杂。
 
-An installer can be created by using the `Installer.nsi` script in the
-Installer directory. This will require the Nullsoft Scriptable Install System
-(NSIS) to be installed. Creating an installer is not necessary to run Dolphin
-since the Binary directory contains a working Dolphin distribution.
+"Debug"解决方案配置过程会比"Release"解决方案更加漫长，更加详细和更加宽松，但这也使调试Dolphin变得更加简单。
 
-## Building for Linux and macOS
+在Installer目录中的`Installer.nsi`会创建一个安装器Installer。这需要安装Nullsoft Scriptable Install System
+(NSIS) 自从二进制文件夹包含整个Dolphin发行版所需要的文件时，就不再需要创建一个安装器Installer来运行Dolphin了
 
-Dolphin requires [CMake](https://cmake.org/) for systems other than Windows. Many libraries are
-bundled with Dolphin and used if they're not installed on your system. CMake
-will inform you if a bundled library is used or if you need to install any
-missing packages yourself. You may refer to the [wiki](https://github.com/dolphin-emu/dolphin/wiki/Building-for-Linux) for more information.
+## 为Linux和Mac OS构建Dolphin
 
-Make sure to pull submodules before building:
+除Windows系统以外，Dolphin都需要CMake来构建。许多的库都是与Dolphin捆绑在一起的；如果这些东西你没有装在系统上，那你就可以使用它们。如果一个内置的库需要被用到，而你安装的软件包还不足够完整时CMake就会通知你并让你安装缺失的软件包。你可能需要参考一下[维基界面](https://github.com/dolphin-emu/dolphin/wiki/Building-for-Linux)来了解更多。
+
+在构建之前使用以下命令确保子模块已被拉取下来:
 ```sh
 git submodule update --init
 ```
 
-### macOS Build Steps:
+### macOS构建步骤:
 
-A binary supporting a single architecture can be built using the following steps: 
+你可以参考以下步骤来构建一个支持单一架构的二进制文件: 
 
 1. `mkdir build`
 2. `cd build`
 3. `cmake ..`
 4. `make`
 
-An application bundle will be created in `./Binaries`.
+一个软件包将会在`./Binaries`中创建。
 
 A script is also provided to build universal binaries supporting both x64 and ARM in the same
 application bundle using the following steps:
