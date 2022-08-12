@@ -71,21 +71,18 @@ git submodule update --init
 
 一个软件包将会在`./Binaries`中创建。
 
-A script is also provided to build universal binaries supporting both x64 and ARM in the same
-application bundle using the following steps:
+我们提供了一个可以构建支持x64和ARM的通用应用程序，如需构建，请参考以下步骤：
 
 1. `mkdir build`
 2. `cd build`
 3. `python ../BuildMacOSUniversalBinary.py`
-4. Universal binaries will be available in the `universal` folder
+4. 通用二进制文件将会在`universal`文件夹内。
 
-Doing this is more complex as it requires installation of library dependencies for both x64 and ARM (or universal library
-equivalents) and may require specifying additional arguments to point to relevant library locations. 
-Execute BuildMacOSUniversalBinary.py --help for more details.  
+如果你要这么做，那么构建将会变得更加复杂，因为它需要适用于x64和ARM架构的安装库依赖项（或者通用库）而且你还需要指定附加参数来指向相关库的路径。请执行 `BuildMacOSUniversalBinary.py --help`以获取更多帮助。
 
-### Linux Global Build Steps:
+### Linux通用构建指南:
 
-To install to your system.
+安装到你的系统中
 
 1. `mkdir build`
 2. `cd build`
@@ -93,9 +90,9 @@ To install to your system.
 4. `make`
 5. `sudo make install`
 
-### Linux Local Build Steps:
+### Linux本地构建指南:
 
-Useful for development as root access is not required.
+适用于无root权限的构建
 
 1. `mkdir Build`
 2. `cd Build`
@@ -103,10 +100,10 @@ Useful for development as root access is not required.
 4. `make`
 5. `ln -s ../../Data/Sys Binaries/`
 
-### Linux Portable Build Steps:
+### Linux便携版构建指南:
 
-Can be stored on external storage and used on different Linux systems.
-Or useful for having multiple distinct Dolphin setups for testing/development/TAS.
+可以被储存在各式各样的外置存储设备上而且还可以在不同的Linux系统上使用。
+还可用于对不同的Dolphin进行调试/开发/TAS。
 
 1. `mkdir Build`
 2. `cd Build`
@@ -115,23 +112,20 @@ Or useful for having multiple distinct Dolphin setups for testing/development/TA
 5. `cp -r ../Data/Sys/ Binaries/`
 6. `touch Binaries/portable.txt`
 
-## Building for Android
+## 为Android构建
 
-These instructions assume familiarity with Android development. If you do not have an
-Android dev environment set up, see [AndroidSetup.md](AndroidSetup.md).
+阅读以下说明，你需要熟悉Android的开发。如果你还没有准备好Android开发环境，请详阅[AndroidSetup.md](AndroidSetup.md) 。
 
-Make sure to pull submodules before building:
+在构建之前使用以下命令确保子模块已被拉取下来:
 ```sh
 git submodule update --init
 ```
 
-If using Android Studio, import the Gradle project located in `./Source/Android`.
+如果你用Android Studio来进行调试，请导入位于`./Source/Android`的Gradle项目。
 
-Android apps are compiled using a build system called Gradle. Dolphin's native component,
-however, is compiled using CMake. The Gradle script will attempt to run a CMake build
-automatically while building the Java code.
+Android应用是通过一个叫做Gradle的构建系统来编译的。然而，Dolphin的原生组件是使用CMake来编译的。 在编译Java代码时，Gradle会试图去运行一个CMake构建。
 
-## Uninstalling
+## 卸载
 
 When Dolphin has been installed with the NSIS installer, you can uninstall
 Dolphin like any other Windows application.
